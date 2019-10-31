@@ -9,24 +9,33 @@ body{
     background-image: url(Images/background.jpg);
     background-attachment: fixed;
     overflow-x:hidden;
+    font-family: 'Paprika', cursive;
 }
 
 /* header section  */
 
 .header{
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    background: rgba(0,0,0,0.6);
     height: auto;
     text-align: center;
 }
 
 .header a{
-    color: white;
+    /* color: white; */
     text-decoration: none;
     font-size: 4rem;
-    font-family: 'UnifrakturMaguntia', cursive;
+    font-family: 'Paprika', cursive;
+    background: -webkit-linear-gradient(180deg,purple, cornflowerblue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
+
+.header a:hover{
+    text-decoration: none;
+    color: linear-gradient(cornflowerblue,purple) !important;
+}
 /* details section */
 
 .game-detail{
@@ -82,12 +91,20 @@ border-radius: 5px;
 background: linear-gradient(  purple, cornflowerblue ); 
 }
 
-@media (max-width: 720px) {
+@media (max-width: 1000px) {
     body{
-        font-size: 1.5 rem;
+        font-size: 1.5rem;
     }
 
     .header a{
-        font-size: 3rem;
+        font-size: 4rem;
+    }
+
+    .article-content p{
+        font-size: 1.5rem;
+    }
+
+    .article p{
+        font-size: 1.5rem;
     }
 }
