@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-
+    scroll-behavior: smooth;
 }
 
 body{
@@ -9,24 +9,26 @@ body{
     background-image: url(Images/background.jpg);
     background-attachment: fixed;
     overflow-x:hidden;
-    font-family: 'Paprika', cursive;
+    scroll-behavior: smooth;
 }
 
 /* header section  */
 
 .header{
     color: white;
-    background: rgba(0,0,0,0.6);
+    /* background: rgba(0,0,0,0.6); */
     height: auto;
-    text-align: center;
+    text-align: left;
+    padding-left: 3vw;
 }
 
 .header a{
     /* color: white; */
     text-decoration: none;
     font-size: 4rem;
-    font-family: 'Paprika', cursive;
+    font-family: 'Iceberg', cursive;
     background: -webkit-linear-gradient(180deg,purple, cornflowerblue);
+    background-clip: unset;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -42,7 +44,9 @@ body{
     background: rgba(0, 0, 0, 0.6);
     color: white;
     text-align: center;
-    margin-top: 2vh;;
+    margin-top: 2vh;
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: justify;
 }
 
 .content img{
@@ -52,17 +56,28 @@ body{
 
 }
 
-.game-content{
+.article-content p{
     text-align: justify;
+    font-size: 1.5rem;
 }
 
 /* main Article section */
 
 
 .article{
-    background: rgba(0, 0, 0, 0.6);
-    height: 90vh;
+    background: rgba(0, 0, 0, 0.9);
     color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: justify;
+}
+
+.article p{
+    font-size: 1.3rem;
+    padding-bottom: 2rem;
+}
+
+.article h3{
+    font-size: 2rem;
 }
 
 /* For the scrollbar */

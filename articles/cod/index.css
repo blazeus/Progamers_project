@@ -28,6 +28,7 @@ body{
     font-size: 4rem;
     font-family: 'Iceberg', cursive;
     background: -webkit-linear-gradient(180deg,purple, cornflowerblue);
+    background-clip: unset;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
